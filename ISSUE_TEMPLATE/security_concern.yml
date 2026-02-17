@@ -1,0 +1,36 @@
+name: Security Concern
+description: Non-sensitive security issue suitable for public discussion.
+title: "[Security] "
+labels: ["security"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe the potential vulnerability or weakness.
+    validations:
+      required: true
+
+  - type: textarea
+    id: affected
+    attributes:
+      label: Affected Components
+    validations:
+      required: true
+
+  - type: dropdown
+    id: exposure
+    attributes:
+      label: Exposure Level
+      options:
+        - Internal only
+        - Authenticated users
+        - Public endpoint
+        - Unknown
+    validations:
+      required: true
+
+  - type: textarea
+    id: mitigation
+    attributes:
+      label: Proposed Mitigation

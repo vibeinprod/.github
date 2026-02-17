@@ -1,0 +1,54 @@
+name: Audit Finding
+description: Document an architectural, structural, or systemic risk.
+title: "[Audit] "
+labels: ["audit"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Describe the identified risk or structural weakness.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Architecture
+        - Dependency Risk
+        - Security Surface
+        - Observability Gap
+        - Performance
+        - Data Integrity
+        - CI/CD Risk
+        - AI-generated code risk
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Potential Impact
+      description: What could break at scale? Under load? Under attack?
+    validations:
+      required: true
+
+  - type: textarea
+    id: recommendation
+    attributes:
+      label: Recommended Action
+      description: Refactor, isolate, replace, reduce dependency, etc.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - Low
+        - Medium
+        - High
+        - Critical

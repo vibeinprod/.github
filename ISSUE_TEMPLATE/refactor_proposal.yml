@@ -1,0 +1,37 @@
+name: Refactor Proposal
+description: Suggest structural improvement without changing product behavior.
+title: "[Refactor] "
+labels: ["refactor"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Current Problem
+      description: Describe duplication, complexity, coupling, tech debt, etc.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed Change
+      description: Outline architectural or structural improvement.
+    validations:
+      required: true
+
+  - type: textarea
+    id: benefits
+    attributes:
+      label: Expected Benefits
+      description: Reduced complexity, smaller surface area, improved testability, etc.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: effort
+    attributes:
+      label: Estimated Effort
+      options:
+        - Small
+        - Medium
+        - Large
