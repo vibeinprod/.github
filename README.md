@@ -5,12 +5,14 @@ This repository contains organization-wide GitHub community health files and def
 ## What this repo controls
 
 - Pull request guidance and review checklist defaults
+- Issue intake templates and form configuration defaults
 - Security disclosure and reporting policy
 - Organization profile content shown on GitHub
 
 ## Repository structure
 
 - `PULL_REQUEST_TEMPLATE.md` — default pull request template for repositories that do not override it
+- `ISSUE_TEMPLATE/` — default issue forms/templates and issue creation configuration
 - `SECURITY.md` — default security policy and vulnerability reporting process
 - `profile/README.md` — public organization profile README
 - `profile/images/` — assets referenced by the profile README
@@ -23,6 +25,7 @@ In practice:
 
 - A repo-level `SECURITY.md` overrides this default
 - A repo-level pull request template overrides this default
+- A repo-level issue template/form configuration overrides these defaults
 
 ## Updating these defaults
 
@@ -35,6 +38,7 @@ In practice:
 
 - Security policy: `SECURITY.md`
 - PR template: `PULL_REQUEST_TEMPLATE.md`
+- Issue templates/forms: `ISSUE_TEMPLATE/`
 - Org profile content: `profile/README.md`
 
 ## Notes
